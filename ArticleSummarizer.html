@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Article Summarizer</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='as.css') }}">
+</head>
+
+<body>
+    <div id="box1"><img id="logo" src="{{url_for('static', filename='articlelogo.png')}}" width="200" height="115"
+            alt="Article Summarizer Logo" style="margin-left: 43%;">
+    </div>
+    <div>&nbsp;</div>
+    <div id="SearchBox">
+        <h2 id="text1">
+            Enter URL Link On Articles Related To Energy
+        </h2>
+        <form action="http://127.0.0.1:5000/search" method="POST">
+            <div class="main-search-input fl-wrap">
+                <div class="main-search-input-item">
+                    <input type="text" id="TextBox" value="" name="url" placeholder="Enter a URL Link">
+                </div>
+                <div>&nbsp;</div>
+                <button id="Search" class="main-search-button">Search</button>
+            </div>
+        </form>
+
+    </div>
+
+
+</body>

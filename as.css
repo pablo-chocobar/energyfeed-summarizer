@@ -1,0 +1,49 @@
+#box1 {
+    top: 0;
+    background-color: rgb(2, 32, 117, 255);
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    display: block;
+    padding: 5px;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0px;
+}
+
+#SearchBox {
+    width: 500px;
+    padding: 50px;
+    border: 5px solid rgba(2, 32, 117, 255);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#text1 {
+    margin: 0 auto;
+    padding: 30px;
+}
+
+#TextBox {
+    display: block;
+    width: 400px;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+}
+
+#Search {
+    background-color: rgb(2, 32, 117, 255);
+    color: #f2f2f2;
+    display: block;
+    margin: 0 auto;
+}
+
+::placeholder {
+    color: black;
+}

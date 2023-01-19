@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Article Summarizer</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='s.css') }}">
+
+
+</head>
+
+<body>
+    <div id="box1"><img id="logo" src="{{url_for('static', filename='articlelogo.png')}}" width="200" height="115"
+            alt="Article Summarizer Logo" style="margin-left: 43%;">
+    </div>
+    <div>&nbsp;</div>
+    <div class="manav">
+        <div
+            style="border: 5px solid rgba(2, 32, 117, 255); padding: 15px; min-width:100px; display: inline-block; margin: 0 auto;">
+            {{summary}}
+        </div>
+    </div>
+
+</body>
