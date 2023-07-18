@@ -1,0 +1,18 @@
+{
+    "name": "summarizer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "watch" : "npx tailwindcss -i ./input.css -o ./static/styles/style.css --watch",
+      "build" : "npx tailwindcss -i ./input.css -o ./static/styles/style.css"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "tailwindcss": "^3.3.2"
+    }
+  }
+  
