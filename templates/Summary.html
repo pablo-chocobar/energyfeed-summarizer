@@ -10,20 +10,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='s.css') }}">
-
-
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
 </head>
 
-<body>
-    <div id="box1"><img id="logo" src="{{url_for('static', filename='articlelogo.png')}}" width="200" height="115"
-            alt="Article Summarizer Logo" style="margin-left: 43%;">
-    </div>
-    <div>&nbsp;</div>
-    <div class="manav">
-        <div
-            style="border: 5px solid rgba(2, 32, 117, 255); padding: 15px; min-width:100px; display: inline-block; margin: 0 auto;">
-            {{summary}}
+<body class = "bg-slate-900">
+
+    <nav class="border-gray-200 bg-transparent-800">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="#" class="flex items-center">
+              <img src="{{ url_for('static', filename = 'images/writing(1).png')}}" class="h-8 mr-3" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Summarizz</span>
+          </a>
+        </div>
+    </nav>
+
+    <div class="grid justify-items-center mt-[5%]">
+        <h2 class = "font-mono text-2xl text-white font-semibold"> Summarizzed Article</h2>
+        <div class = "border-4 border-white  min-w-min max-w-4xl min-h-min max-h-max p-3 mt-3 text-white font-mono font-extralight">
+            {{ summary }}
         </div>
     </div>
 
