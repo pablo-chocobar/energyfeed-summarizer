@@ -14,7 +14,7 @@ To summarize the scraped content, we rely on a pre-trained transformers model ca
 3)Text generation\
  ->Generates the summary
 
-For the user interface we've used html and vanilla css. To connect all these togther, we've used the Flask framework in python. Upon entering the link, the html will redirect the user to a page and pass the entered url to the Flask server. The Flask server will then pass the link as a parameter to the scraper script which will return the scraped text. this text then will be passed to the summarizer script which will return the summarized content. This content is then passed to the result page, where Flask will replace the placeholder text, and voila the summary is there for the user to read. 
+For the user interface we've used html and TailwindCSS. To connect all these togther, we've used the Flask framework in python. Upon entering the link, the html will redirect the user to a page and pass the entered url to the Flask server. The Flask server will then pass the link as a parameter to the scraper script which will return the scraped text. this text then will be passed to the summarizer script which will return the summarized content. This content is then passed to the result page, where Flask will replace the placeholder text, and voila the summary is there for the user to read. 
 
 # Requirements to run our implementation: 
 1. Python 3.9
